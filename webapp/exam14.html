@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>이벤트</h1>
+	
+	<h2>h2태그-1</h2>
+	<h2>h2태그-2</h2>
+	<h2>h2태그-3</h2>
+	
+	<h3 class="tagh3">h3태그-1</h3>
+	<h3 class="tagh3">h3태그-2</h3>
+	<h3 class="tagh3">네이버</h3>
+	<h3 class="tagh3">다음</h3>
+	
+	<div>
+		<button id="btn">자바스크립트 테스트 버튼</button>
+		<p id="display">이름출력영역</p>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	//문서의 모든요소가 로딩된 후에 function()의 내용이 실행되라
+	window.onload = function() {
+		//아이디로 가져오기
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display");
+
+		//html태그로 가져오기
+		var h2Array = document.getElementsByTagName("h2");
+		
+
+		//클래스로 가져오기
+		var h3Array = document.getElementsByClassName("tagh3");
+		console.log(h3Array);
+		
+		
+		//id가 "btn"인 버튼을 클릭할떄 function()에 정의된 대로 작동해라
+		testButton.onclick = function() {
+			testArea.innerHTML = "홍길동";
+
+		};
+	
+		console.log(h2Array[1]);
+		
+		//h2태그의 2번째를 클릭할때 function()에 정의된 대로 작동해라
+		
+		
+		console.log(h2Array[1]);
+		h2Array[1].onclick = function() {
+			testArea.innerHTML = "청하";
+		};
+		
+		
+		
+		
+		
+		var h1tag = document.getElementsByTagName("h1");
+		console.log(h1tag);
+		
+		
+		h3Array[3].onclick = function() {
+			h1tag[0].innerHtml = "wwww.daum.net";
+		};
+		
+		
+		
+		
+		
+		
+		
+	
+	};
+</script>
+
+
+
+
+</html>

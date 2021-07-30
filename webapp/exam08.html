@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//이름이 있는 함수(기명함수, 선언작함수)
+	
+		
+		
+		
+		var plusSum = plus(3, 5);
+		
+		console.log(plusSum );
+		
+		
+		//document.write(plusSum);
+	
+		var result01 = plus(2.6, 5.8);
+		console.log(result01 );
+		
+		var result02 = plus("안녕", "하세요");
+		console.log(result02 );
+		
+		
+		
+		
+		//함수정의 --> ********\정의부터 해석된다
+		function plus(a, b){
+			var sum = a + b;
+			return sum;
+		}
+		
+		
+		//이름이 없는 함수(익명함) ---> 이름이 없어서 바로 사용해야함
+		var minsu = function(a, b){
+			var sum = a - b;
+			return sum;
+		}
+		
+		console.log(typeof minsu); //function
+		
+		
+		var result03 = minsu(5,4)
+		console.log(result03);
+		
+		
+		var result04 = minsu(5, 2.4);
+		console.log(result04);
+		
+		var result05 = minsu("안냥", "하세요");
+		console.log(result05);
+		
+		
+		
+	</script>
+	
+	
+	
+</body>
+	
+
+</html>
